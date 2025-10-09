@@ -1,6 +1,4 @@
-
-        /* Reset et Variables CSS */
-        * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -60,7 +58,7 @@
             list-style: none;
             gap: 2.5rem;
         }
-        .c
+
         .nav-links a {
             color: var(--text-primary);
             text-decoration: none;
@@ -494,4 +492,5 @@
             .news-grid {
                 grid-template-columns: 1fr;
             }
+            .con
         }
