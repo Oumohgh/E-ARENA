@@ -6,9 +6,10 @@
     <meta name="description" content="E-Arena - Plateforme E-Sport pour tournois, équipes et actualités gaming compétitif">
     <meta name="keywords" content="esport, gaming, tournois, compétition, équipes">
     <meta name="author" content="E-Arena">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a0e27">
     <link rel="stylesheet" href="styles.css">
     <title>E-Arena | Plateforme E-Sport - Tournois & Compétitions</title>
-  
 </head>
 <body>
     <!-- Header -->
@@ -16,24 +17,240 @@
         <nav>
             <div class="logo">E-ARENA</div>
             <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html" class="active">Accueil</a></li>
                 <li><a href="tournois.html">Tournois</a></li>
                 <li><a href="equipes.html">Équipes</a></li>
                 <li><a href="Actualites.html">Actualités</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">À propos</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="accueil" class="hero">
-        <div class="hero-content">
-            <h1>Bienvenue sur E-Arena</h1>
-            <p>La plateforme ultime pour les compétitions E-Sport</p>
-            <a href="tournois.html" class="cta-button">Découvrir les Tournois</a>
+    <main id="main-content">
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <h1>Bienvenue sur E-Arena</h1>
+                <p>La plateforme ultime pour les compétitions E-Sport</p>
+                <div class="hero-buttons">
+                    <a href="tournois.html" class="cta-button">Découvrir les Tournois</a>
+                    <a href="contact.html" class="cta-button secondary">Rejoindre l'Aventure</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Tournois Preview -->
+        <section id="tournois-preview">
+            <div class="section-container">
+                <h2 class="section-title">Tournois à Venir</h2>
+            <div class="tournaments-grid">
+                <article class="tournament-card">
+                    <div class="tournament-image">🎮</div>
+                    <div class="tournament-content">
+                        <h3>Championship Series 2025</h3>
+                        <div class="tournament-meta">
+                            <span class="meta-item">📅 15-17 Nov 2025</span>
+                            <span class="meta-item">👥 128 Équipes</span>
+                        </div>
+                        <p>Le tournoi le plus prestigieux de l'année avec les meilleures équipes internationales.</p>
+                        <span class="prize-pool">💰 500 000€</span>
+                        <div class="tournament-actions">
+                            <a href="tournois.html" class="btn-secondary">Voir Détails</a>
+                            <a href="tournois.html#register" class="btn-primary">S'inscrire</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tournament-card">
+                    <div class="tournament-image">⚔️</div>
+                    <div class="tournament-content">
+                        <h3>Battle Royale Masters</h3>
+                        <div class="tournament-meta">
+                            <span class="meta-item">📅 22-24 Nov 2025</span>
+                            <span class="meta-item">👥 64 Équipes</span>
+                        </div>
+                        <p>Affrontements intenses en mode Battle Royale avec les meilleurs joueurs du monde.</p>
+                        <span class="prize-pool">💰 250 000€</span>
+                        <div class="tournament-actions">
+                            <a href="tournois.html" class="btn-secondary">Voir Détails</a>
+                            <a href="tournois.html#register" class="btn-primary">S'inscrire</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tournament-card">
+                    <div class="tournament-image">🏆</div>
+                    <div class="tournament-content">
+                        <h3>Winter Cup 2025</h3>
+                        <div class="tournament-meta">
+                            <span class="meta-item">📅 05-07 Déc 2025</span>
+                            <span class="meta-item">👥 32 Équipes</span>
+                        </div>
+                        <p>Tournoi de fin d'année regroupant les champions de chaque région.</p>
+                        <span class="prize-pool">💰 150 000€</span>
+                        <div class="tournament-actions">
+                            <a href="tournois.html" class="btn-secondary">Voir Détails</a>
+                            <a href="tournois.html#register" class="btn-primary">S'inscrire</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="section-footer">
+                <a href="tournois.html" class="view-all-link">Voir tous les tournois →</a>
+            </div>
         </div>
     </section>
+
+        <!-- Section Équipes Preview -->
+        <section id="equipes-preview">
+            <div class="section-container">
+                <h2 class="section-title">Équipes Élite</h2>
+            <div class="teams-grid">
+                <article class="team-card">
+                    <div class="team-logo">TF</div>
+                    <h3 class="team-name">Team Fury</h3>
+                    <p class="team-rank">🥇 Classement N°1</p>
+                    <div class="team-stats">
+                        <div class="stat">
+                            <span class="stat-value">85%</span>
+                            <span class="stat-label">Victoires</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">42</span>
+                            <span class="stat-label">Matchs</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">12</span>
+                            <span class="stat-label">Titres</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="team-card">
+                    <div class="team-logo">VX</div>
+                    <h3 class="team-name">Vortex Gaming</h3>
+                    <p class="team-rank">🥈 Classement N°2</p>
+                    <div class="team-stats">
+                        <div class="stat">
+                            <span class="stat-value">78%</span>
+                            <span class="stat-label">Victoires</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">38</span>
+                            <span class="stat-label">Matchs</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">8</span>
+                            <span class="stat-label">Titres</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="team-card">
+                    <div class="team-logo">NX</div>
+                    <h3 class="team-name">Nexus Elite</h3>
+                    <p class="team-rank">🥉 Classement N°3</p>
+                    <div class="team-stats">
+                        <div class="stat">
+                            <span class="stat-value">72%</span>
+                            <span class="stat-label">Victoires</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">35</span>
+                            <span class="stat-label">Matchs</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">6</span>
+                            <span class="stat-label">Titres</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="team-card">
+                    <div class="team-logo">PX</div>
+                    <h3 class="team-name">Phoenix Squad</h3>
+                    <p class="team-rank">Classement N°4</p>
+                    <div class="team-stats">
+                        <div class="stat">
+                            <span class="stat-value">68%</span>
+                            <span class="stat-label">Victoires</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">32</span>
+                            <span class="stat-label">Matchs</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">4</span>
+                            <span class="stat-label">Titres</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="section-footer">
+                <a href="equipes.html" class="view-all-link">Voir toutes les équipes →</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Section Actualités Preview -->
+        <section id="actualites-preview">
+            <div class="section-container">
+                <h2 class="section-title">Dernières Actualités</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">📰</div>
+                    <div class="news-content">
+                        <time class="news-date">10 Octobre 2025</time>
+                        <h3>Team Fury remporte le Grand Slam</h3>
+                        <p>Une performance exceptionnelle lors de la finale qui restera dans les annales de l'E-Sport.</p>
+                        <a href="Actualites.html" class="read-more">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">🎯</div>
+                    <div class="news-content">
+                        <time class="news-date">08 Octobre 2025</time>
+                        <h3>Nouveaux records établis</h3>
+                        <p>Les statistiques du dernier tournoi dépassent toutes les attentes avec plus de 2 millions de spectateurs.</p>
+                        <a href="Actualites.html" class="read-more">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">⭐</div>
+                    <div class="news-content">
+                        <time class="news-date">05 Octobre 2025</time>
+                        <h3>Recrutement de joueurs pros</h3>
+                        <p>E-Arena lance son programme de détection de talents pour former la prochaine génération de champions.</p>
+                        <a href="Actualites.html" class="read-more">Lire la suite →</a>
+                    </div>
+                </article>
+            </div>
+            <div class="section-footer">
+                <a href="Actualites.html" class="view-all-link">Voir toutes les actualités →</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Section Newsletter -->
+        <section id="newsletter">
+            <div class="section-container">
+                <div class="newsletter-content">
+                    <h2>Restez Informé</h2>
+                    <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités, résultats de tournois et opportunités exclusives.</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Votre adresse email" required>
+                            <button type="submit">S'inscrire</button>
+                        </div>
+                        <p class="newsletter-disclaimer">En vous inscrivant, vous acceptez de recevoir nos communications marketing.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
     <!-- Footer -->
@@ -46,31 +263,33 @@
 
             <div class="footer-section">
                 <h4>Liens Rapides</h4>
+                <nav aria-label="Navigation du pied de page">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="tournois.html">Tournois</a></li>
                     <li><a href="equipes.html">Équipes</a></li>
                     <li><a href="Actualites.html">Actualités</a></li>
                 </ul>
+                </nav>
             </div>
 
             <div class="footer-section">
                 <h4>Support</h4>
                 <ul>
-                    <li><a href="#">Centre d'aide</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Règlement</a></li>
-                    <li><a href="#">Nous contacter</a></li>
+                    <li><a href="#" aria-label="Accéder au centre d'aide">Centre d'aide</a></li>
+                    <li><a href="#" aria-label="Consulter les questions fréquentes">FAQ</a></li>
+                    <li><a href="#" aria-label="Lire le règlement">Règlement</a></li>
+                    <li><a href="contact.html" aria-label="Nous contacter">Nous contacter</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
                 <h4>Suivez-nous</h4>
                 <div class="social-links">
-                    <a href="#" class="social-link" aria-label="Facebook">f</a>
-                    <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
-                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
-                    <a href="#" class="social-link" aria-label="Discord">💬</a>
+                    <a href="https://facebook.com/earena" class="social-link" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/earena" class="social-link" target="_blank">Twitter</a>
+                    <a href="https://instagram.com/earena" class="social-link" target="_blank">Instagram</a>
+                    <a href="https://discord.gg/earena" class="social-link" target="_blank">Discord</a>
                 </div>
             </div>
         </div>
@@ -79,5 +298,6 @@
             <p>&copy; 2025 E-Arena. Tous droits réservés.</p>
         </div>
     </footer>
+
 </body>
 </html>

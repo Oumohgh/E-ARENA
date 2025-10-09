@@ -16,11 +16,11 @@
         <nav>
             <div class="logo">E-ARENA</div>
             <ul class="nav-links">
-                <li><a href="index.html" >Accueil</a></li>
-                <li><a href="tournois.html">Tournois</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="tournois.html" class="active">Tournois</a></li>
                 <li><a href="equipes.html">Équipes</a></li>
                 <li><a href="Actualites.html">Actualités</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">À propos</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -71,20 +71,217 @@
             </article>
         </div>
     </section>
-    <form action="" style="border:1px solid #cb9e9e">
+    <!-- Registration Section -->
+    <section id="register" class="registration-section">
+        <div class="section-container">
+            <h2 class="section-title">Inscription aux Tournois</h2>
+            <p class="registration-intro">Rejoignez la communauté E-Arena et participez aux plus grands tournois E-Sport. Choisissez votre type d'inscription :</p>
+            
+            <div class="registration-tabs">
+                <a href="#individual" class="tab-button active">Joueur Individuel</a>
+                <a href="#team" class="tab-button">Équipe</a>
+                <a href="#spectator" class="tab-button">Spectateur</a>
+            </div>
+
+            <!-- Individual Registration -->
+            <div id="individual" class="registration-form">
+                <div class="container">
+                    <h3>Inscription Joueur Individuel</h3>
+                    <p>Participez aux tournois en tant que joueur solo</p>
+                    <form action="#" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Prénom</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Votre prénom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nom</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Votre nom" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+33 6 12 34 56 78">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="game">Jeu Préféré</label>
+                            <select id="game" name="game" required>
+                                <option value="">Sélectionnez un jeu</option>
+                                <option value="valorant">Valorant</option>
+                                <option value="csgo">Counter-Strike: GO</option>
+                                <option value="lol">League of Legends</option>
+                                <option value="dota2">Dota 2</option>
+                                <option value="fortnite">Fortnite</option>
+                                <option value="apex">Apex Legends</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">Niveau d'Expérience</label>
+                            <select id="experience" name="experience" required>
+                                <option value="">Sélectionnez votre niveau</option>
+                                <option value="beginner">Débutant</option>
+                                <option value="intermediate">Intermédiaire</option>
+                                <option value="advanced">Avancé</option>
+                                <option value="professional">Professionnel</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tournament">Tournoi d'Intérêt</label>
+                            <select id="tournament" name="tournament" required>
+                                <option value="">Sélectionnez un tournoi</option>
+                                <option value="championship">Championship Series 2025</option>
+                                <option value="battle-royale">Battle Royale Masters</option>
+                                <option value="winter-cup">Winter Cup 2025</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span class="checkmark"></span>
+                                Je souhaite recevoir la newsletter E-Arena
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="terms" value="yes" required>
+                                <span class="checkmark"></span>
+                                J'accepte les <a href="#" class="terms-link">conditions d'utilisation</a> et la <a href="#" class="terms-link">politique de confidentialité</a>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-button">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Team Registration -->
+            <div id="team" class="registration-form">
+                <div class="container">
+                    <h3>Inscription Équipe</h3>
+                    <p>Inscrivez votre équipe pour participer aux tournois</p>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="teamName">Nom de l'Équipe</label>
+                            <input type="text" id="teamName" name="teamName" placeholder="Nom de votre équipe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="teamCaptain">Capitaine de l'Équipe</label>
+                            <input type="text" id="teamCaptain" name="teamCaptain" placeholder="Nom du capitaine" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="teamEmail">Email de Contact</label>
+                            <input type="email" id="teamEmail" name="teamEmail" placeholder="contact@equipe.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="teamSize">Nombre de Joueurs</label>
+                            <select id="teamSize" name="teamSize" required>
+                                <option value="">Sélectionnez le nombre</option>
+                                <option value="3">3 joueurs</option>
+                                <option value="4">4 joueurs</option>
+                                <option value="5">5 joueurs</option>
+                                <option value="6">6 joueurs</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="teamGame">Jeu Principal</label>
+                            <select id="teamGame" name="teamGame" required>
+                                <option value="">Sélectionnez un jeu</option>
+                                <option value="valorant">Valorant</option>
+                                <option value="csgo">Counter-Strike: GO</option>
+                                <option value="lol">League of Legends</option>
+                                <option value="dota2">Dota 2</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="teamLevel">Niveau de l'Équipe</label>
+                            <select id="teamLevel" name="teamLevel" required>
+                                <option value="">Sélectionnez le niveau</option>
+                                <option value="amateur">Amateur</option>
+                                <option value="semi-pro">Semi-Professionnel</option>
+                                <option value="professional">Professionnel</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="teamTerms" value="yes" required>
+                                <span class="checkmark"></span>
+                                J'accepte les <a href="#" class="terms-link">conditions d'utilisation</a> pour les équipes
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-button">Inscrire l'Équipe</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Spectator Registration -->
+            <div id="spectator" class="registration-form">
   <div class="container">
-    <h1>Sign Up</h1>
-    <p>Ebtrer votre informations</p>
-    <hr>
+                    <h3>Inscription Spectateur</h3>
+                    <p>Suivez les tournois et recevez les dernières actualités</p>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="spectatorName">Nom Complet</label>
+                            <input type="text" id="spectatorName" name="spectatorName" placeholder="Votre nom complet" required>
+                        </div>
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+                        <div class="form-group">
+                            <label for="spectatorEmail">Email</label>
+                            <input type="email" id="spectatorEmail" name="spectatorEmail" placeholder="votre.email@exemple.com" required>
+                        </div>
 
-    <label for="psw"><b>Mot de passe</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+                        <div class="form-group">
+                            <label for="favoriteGame">Jeu Préféré à Suivre</label>
+                            <select id="favoriteGame" name="favoriteGame">
+                                <option value="">Tous les jeux</option>
+                                <option value="valorant">Valorant</option>
+                                <option value="csgo">Counter-Strike: GO</option>
+                                <option value="lol">League of Legends</option>
+                                <option value="dota2">Dota 2</option>
+                                <option value="fortnite">Fortnite</option>
+                                <option value="apex">Apex Legends</option>
+                            </select>
+                        </div>
 
-    <label for="psw-repeat"><b> repeter mot de passe</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes" checked>
+                                <span class="checkmark"></span>
+                                Recevoir la newsletter avec les résultats et actualités
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="notifications" value="yes">
+                                <span class="checkmark"></span>
+                                Recevoir les notifications de début de tournois
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-button">S'inscrire comme Spectateur</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
      <footer id="contact">
         <div class="footer-content">
@@ -116,10 +313,10 @@
             <div class="footer-section">
                 <h4>Suivez-nous</h4>
                 <div class="social-links">
-                    <a href="#" class="social-link" aria-label="Facebook">f</a>
-                    <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
-                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
-                    <a href="#" class="social-link" aria-label="Discord">💬</a>
+                    <a href="https://facebook.com/earena" class="social-link" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/earena" class="social-link" target="_blank">Twitter</a>
+                    <a href="https://instagram.com/earena" class="social-link" target="_blank">Instagram</a>
+                    <a href="https://discord.gg/earena" class="social-link" target="_blank">Discord</a>
                 </div>
             </div>
         </div>
@@ -128,5 +325,6 @@
             <p>&copy; 2025 E-Arena. Tous droits réservés.</p>
         </div>
     </footer>
+
     </body>
 </html>
