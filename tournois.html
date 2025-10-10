@@ -83,7 +83,7 @@
                 <a href="#spectator" class="tab-button">Spectateur</a>
             </div>
 
-            <!-- Individual Registration -->
+            <!-- perso Registration -->
             <div id="individual" class="registration-form">
                 <div class="container">
                     <h3>Inscription Joueur Individuel</h3>
@@ -91,8 +91,8 @@
                     <form action="#" method="post">
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="firstName">Prénom</label>
-                                <input type="text" id="firstName" name="firstName" placeholder="Votre prénom" required>
+                                <label for="firstName">Prenom</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Votre prenom" required>
                             </div>
                             <div class="form-group">
                                 <label for="lastName">Nom</label>
@@ -106,58 +106,37 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="phone">Téléphone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+33 6 12 34 56 78">
+                            <label for="phone">Telephone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+21 06 05 04">
                         </div>
 
                         <div class="form-group">
-                            <label for="game">Jeu Préféré</label>
+                            <label for="game">Jeu Prefere</label>
                             <select id="game" name="game" required>
                                 <option value="">Sélectionnez un jeu</option>
                                 <option value="valorant">Valorant</option>
-                                <option value="csgo">Counter-Strike: GO</option>
-                                <option value="lol">League of Legends</option>
-                                <option value="dota2">Dota 2</option>
-                                <option value="fortnite">Fortnite</option>
-                                <option value="apex">Apex Legends</option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label for="experience">Niveau d'Expérience</label>
+                            <label for="experience">Niveau d'Experience</label>
                             <select id="experience" name="experience" required>
-                                <option value="">Sélectionnez votre niveau</option>
-                                <option value="beginner">Débutant</option>
-                                <option value="intermediate">Intermédiaire</option>
-                                <option value="advanced">Avancé</option>
+                                <option value="">Selectionnez votre niveau</option>
+                                <option value="beginner">Debutant</option>
+                                <option value="intermediate">Intermediaire</option>
+                                <option value="advanced">Avance</option>
                                 <option value="professional">Professionnel</option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label for="tournament">Tournoi d'Intérêt</label>
+                            <label for="tournament">Tournoi d'Interet</label>
                             <select id="tournament" name="tournament" required>
-                                <option value="">Sélectionnez un tournoi</option>
+                                <option value="">Selectionnez un tournoi</option>
                                 <option value="championship">Championship Series 2025</option>
                                 <option value="battle-royale">Battle Royale Masters</option>
                                 <option value="winter-cup">Winter Cup 2025</option>
                             </select>
-                        </div>
-
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="newsletter" value="yes">
-                                <span class="checkmark"></span>
-                                Je souhaite recevoir la newsletter E-Arena
-                            </label>
-                        </div>
-
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="terms" value="yes" required>
-                                <span class="checkmark"></span>
-                                J'accepte les <a href="#" class="terms-link">conditions d'utilisation</a> et la <a href="#" class="terms-link">politique de confidentialité</a>
-                            </label>
                         </div>
 
                         <button type="submit" class="submit-button">S'inscrire</button>
@@ -165,19 +144,19 @@
                 </div>
             </div>
 
-            <!-- Team Registration -->
+            <!-- equipe Registration -->
             <div id="team" class="registration-form">
                 <div class="container">
-                    <h3>Inscription Équipe</h3>
-                    <p>Inscrivez votre équipe pour participer aux tournois</p>
+                    <h3>Inscription Equipe</h3>
+                    <p>Inscrivez votre equipe pour participer aux tournois</p>
                     <form action="#" method="post">
                         <div class="form-group">
-                            <label for="teamName">Nom de l'Équipe</label>
+                            <label for="teamName">Nom de l'Equipe</label>
                             <input type="text" id="teamName" name="teamName" placeholder="Nom de votre équipe" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="teamCaptain">Capitaine de l'Équipe</label>
+                            <label for="teamCaptain">Capitaine de l'Equipe</label>
                             <input type="text" id="teamCaptain" name="teamCaptain" placeholder="Nom du capitaine" required>
                         </div>
 
@@ -189,7 +168,7 @@
                         <div class="form-group">
                             <label for="teamSize">Nombre de Joueurs</label>
                             <select id="teamSize" name="teamSize" required>
-                                <option value="">Sélectionnez le nombre</option>
+                                <option value="">Selectionnez le nombre</option>
                                 <option value="3">3 joueurs</option>
                                 <option value="4">4 joueurs</option>
                                 <option value="5">5 joueurs</option>
@@ -202,31 +181,21 @@
                             <select id="teamGame" name="teamGame" required>
                                 <option value="">Sélectionnez un jeu</option>
                                 <option value="valorant">Valorant</option>
-                                <option value="csgo">Counter-Strike: GO</option>
-                                <option value="lol">League of Legends</option>
                                 <option value="dota2">Dota 2</option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label for="teamLevel">Niveau de l'Équipe</label>
+                            <label for="teamLevel">Niveau de l'Equipe</label>
                             <select id="teamLevel" name="teamLevel" required>
-                                <option value="">Sélectionnez le niveau</option>
+                                <option value="">Selectionnez le niveau</option>
                                 <option value="amateur">Amateur</option>
                                 <option value="semi-pro">Semi-Professionnel</option>
                                 <option value="professional">Professionnel</option>
                             </select>
                         </div>
 
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="teamTerms" value="yes" required>
-                                <span class="checkmark"></span>
-                                J'accepte les <a href="#" class="terms-link">conditions d'utilisation</a> pour les équipes
-                            </label>
-                        </div>
-
-                        <button type="submit" class="submit-button">Inscrire l'Équipe</button>
+                        <button type="submit" class="submit-button">Inscrire l'Equipe</button>
                     </form>
                 </div>
             </div>
@@ -248,33 +217,18 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="favoriteGame">Jeu Préféré à Suivre</label>
+                            <label for="favoriteGame">Jeu Prefere a Suivre</label>
                             <select id="favoriteGame" name="favoriteGame">
                                 <option value="">Tous les jeux</option>
                                 <option value="valorant">Valorant</option>
-                                <option value="csgo">Counter-Strike: GO</option>
                                 <option value="lol">League of Legends</option>
-                                <option value="dota2">Dota 2</option>
+                                <option value="Fifa">Fifa</option>
                                 <option value="fortnite">Fortnite</option>
-                                <option value="apex">Apex Legends</option>
+                              
                             </select>
                         </div>
 
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="newsletter" value="yes" checked>
-                                <span class="checkmark"></span>
-                                Recevoir la newsletter avec les résultats et actualités
-                            </label>
-                        </div>
 
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="notifications" value="yes">
-                                <span class="checkmark"></span>
-                                Recevoir les notifications de début de tournois
-                            </label>
-                        </div>
 
                         <button type="submit" class="submit-button">S'inscrire comme Spectateur</button>
                     </form>
@@ -316,7 +270,6 @@
                     <a href="https://facebook.com/earena" class="social-link" target="_blank">Facebook</a>
                     <a href="https://twitter.com/earena" class="social-link" target="_blank">Twitter</a>
                     <a href="https://instagram.com/earena" class="social-link" target="_blank">Instagram</a>
-                    <a href="https://discord.gg/earena" class="social-link" target="_blank">Discord</a>
                 </div>
             </div>
         </div>
